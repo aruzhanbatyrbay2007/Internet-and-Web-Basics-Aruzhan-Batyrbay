@@ -1,0 +1,179 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aruzhan Batyrbay — CV</title>
+  <style>
+    :root{
+      --bg:#f7f9fb;
+      --card:#ffffff;
+      --accent:#1f6feb;
+      --muted:#6b7280;
+      --radius:12px;
+      --max-width:900px;
+      --pad:20px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color-scheme: light;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      padding:40px 16px;
+    }
+    .cv{
+      width:100%;
+      max-width:var(--max-width);
+      background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95));
+      border-radius:var(--radius);
+      box-shadow:0 8px 30px rgba(17,24,39,0.08);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:0;
+    }
+    header{
+      grid-column:1 / -1;
+      padding:var(--pad);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      border-bottom:1px solid #eef2f7;
+    }
+    .heading-left{
+      display:flex;
+      gap:18px;
+      align-items:center;
+    }
+    .avatar{
+      width:72px;
+      height:72px;
+      border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),#6dd3ff);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    .meta{color:var(--muted);font-size:13px}
+
+    .main{
+      padding:24px;
+      min-height:420px;
+    }
+    .side{
+      background:var(--card);
+      padding:24px;
+      border-left:1px solid #f1f5f9;
+    }
+    .section{margin-bottom:18px}
+    .section h2{
+      margin:0 0 8px 0;
+      font-size:14px;
+      letter-spacing:0.2px;
+      color:#111827;
+    }
+    p{margin:0 0 10px 0; line-height:1.5}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
+
+    .contact-list{display:flex;flex-direction:column;gap:8px;font-size:14px}
+    .chip{background:#f8fafc;border-radius:8px;padding:10px;font-size:13px;color:var(--muted)}
+
+    .highlight{background:linear-gradient(90deg, rgba(31,111,235,0.08), rgba(109,211,255,0.05));padding:12px;border-radius:8px;border:1px solid rgba(31,111,235,0.08)}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#eef2ff;padding:6px 10px;border-radius:999px;font-size:13px}
+
+    footer{grid-column:1 / -1;padding:16px;border-top:1px solid #eef2f7;background:transparent;text-align:center;color:var(--muted);font-size:13px}
+
+    @media (max-width:880px){
+      .cv{grid-template-columns:1fr;}
+      .side{order:2}
+    }
+  </style>
+</head>
+<body>
+  <article class="cv" role="article">
+    <header>
+      <div class="heading-left">
+        <div class="avatar">AB</div>
+        <div>
+          <h1>Aruzhan Batyrbay</h1>
+          <div class="meta">Information Systems / Physics — Second year</div>
+        </div>
+      </div>
+      <div class="meta">Riga, Latvia · aruzhanbatyrbay2007@example.com</div>
+    </header>
+
+    <section class="main">
+      <div class="section highlight">
+        <h2>Highlight</h2>
+        <p>Self‑development oriented student with strong interest in technology, science, and modern digital tools. Passionate about learning, exploring new fields, and growing academically and personally.</p>
+      </div>
+
+      <div class="section">
+        <h2>About Me</h2>
+        <p>I am a second-year scientific physics student who loves learning, exploring new ideas, and developing myself both academically and personally. Since childhood, I have traveled a lot across Kazakhstan, which helped me become adaptable, open-minded, and comfortable in new environments.</p>
+        <p>I am interested in modern technologies, especially artificial intelligence and web development, and I continuously take online courses to improve my digital skills. I enjoy creating small projects, making creative content, and challenging myself with tasks that help me grow.</p>
+        <p>I value having God in my heart, staying kind to people, and working towards becoming the best version of myself. I’m also responsible, patient, and enjoy helping others — experience gained working as a nanny for young children.</p>
+        <p>My goal is to build strong knowledge in technology, develop my professional skills, and create meaningful projects that can help people and society.</p>
+      </div>
+
+      <div class="section">
+        <h2>Portfolio</h2>
+        <ol>
+          <li><strong>Mini Project Website:</strong> A simple web page created using HTML &amp; CSS.</li>
+          <li><strong>AI Research Presentation:</strong> Exploring the impact of AI on students' learning.</li>
+          <li><strong>Scientific Article Defense:</strong> English-language presentation at a student conference.</li>
+        </ol>
+      </div>
+    </section>
+
+    <aside class="side">
+      <div class="section">
+        <h2>Contact</h2>
+        <div class="contact-list">
+          <div class="chip">Address: Riga, Latvia</div>
+          <div class="chip">Email: <a href="mailto:aruzhanbatyrbay2007@example.com">aruzhanbatyrbay2007@example.com</a></div>
+          <div class="chip">Study Program: Information Systems / Physics</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Certificates</h2>
+        <ul>
+          <li>Diploma in Website Development Using HTML &amp; CSS</li>
+          <li>Modern Web Design with HTML and CSS</li>
+          <li>Web Design Using HTML</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+          <span class="skill">AI fundamentals</span>
+          <span class="skill">Neural networks</span>
+          <span class="skill">Optimization</span>
+          <span class="skill">Statistics</span>
+          <span class="skill">Research</span>
+          <span class="skill">HTML &amp; CSS</span>
+        </div>
+      </div>
+    </aside>
+
+    <footer>
+      Generated CV — you can edit this and export or copy the HTML.
+    </footer>
+  </article>
+</body>
+</html>
